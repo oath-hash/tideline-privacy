@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tideline — Privacy Policy</title>
+  <title>Tideline Privacy Policy</title>
   <meta name="description" content="Privacy policy for the Tideline iOS app. Tideline collects nothing and transmits nothing.">
   <style>
     :root {
@@ -99,7 +99,7 @@
 <body>
 <main>
 
-<h1>Tideline — Privacy Policy</h1>
+<h1>Tideline Privacy Policy</h1>
 <p class="meta">Effective date: 15 May 2026 · For the Tideline iOS app</p>
 
 <div class="summary">
@@ -112,9 +112,9 @@
 
 <p>It does not cover Apple's own handling of data when you install, update, or use an iOS app from the App Store. For that, see <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
 
-<h2>2. The short and the long of it</h2>
+<h2>2. How Tideline is built</h2>
 
-<p>Tideline is built around a single design choice: your data does not leave your device. There is no Tideline server. The app does not make network requests. We do not have a way to see your diary entries, your preferences, or how you use the app — even if we wanted to. That is enforced by what the app's code does and does not do, not by a promise we ask you to trust.</p>
+<p>Tideline is built around a single design choice: your data does not leave your device. There is no Tideline server. The app does not make network requests. We do not have a way to see your diary entries, your preferences, or how you use the app, even if we wanted to. That is enforced by what the app's code does and does not do, not by a promise we ask you to trust.</p>
 
 <p>The rest of this document explains how that holds for each kind of data Apple's App Privacy questionnaire asks about, and for each thing the app actually does.</p>
 
@@ -124,10 +124,10 @@
 
 <ul>
   <li><strong>Contact info</strong> (name, email address, phone number, physical address, other user contact info).</li>
-  <li><strong>Health and fitness</strong> (health, fitness, or wellness data of any kind, including the seizure diary entries themselves — see Section 4).</li>
+  <li><strong>Health and fitness</strong> (health, fitness, or wellness data of any kind, including the seizure diary entries themselves; see Section 4).</li>
   <li><strong>Financial info</strong> (payment info, credit info, other financial info).</li>
   <li><strong>Location</strong> (precise location, coarse location).</li>
-  <li><strong>Sensitive info</strong> (racial or ethnic data, sexual orientation, pregnancy or childbirth info, disability, religious or philosophical beliefs, trade union membership, political opinion, genetic information, biometric data — see Section 5 on Face ID).</li>
+  <li><strong>Sensitive info</strong> (racial or ethnic data, sexual orientation, pregnancy or childbirth info, disability, religious or philosophical beliefs, trade union membership, political opinion, genetic information, biometric data: see Section 5 on Face ID).</li>
   <li><strong>Contacts</strong> (your address book).</li>
   <li><strong>User content</strong> (emails or messages, photos or videos, audio data, gameplay content, customer support, other user content).</li>
   <li><strong>Browsing history</strong>.</li>
@@ -143,15 +143,15 @@
 
 <h2>4. What the app does store, locally</h2>
 
-<p>Tideline is a seizure diary, so it does need to remember the things you tell it. Everything below is stored on your device only:</p>
+<p>As a seizure diary, Tideline records the information you enter. Everything below is stored on your device only:</p>
 
 <ul>
-  <li><strong>Your diary entries.</strong> Seizure type, time, duration, recovery details, medication notes, wellbeing notes, and general notes — anything you type into the entry form. Stored in a local SQLite database inside the app's own sandboxed container.</li>
+  <li><strong>Your diary entries.</strong> Seizure type, time, duration, recovery details, medication notes, wellbeing notes, and general notes (anything you type into the entry form). Stored in a local SQLite database inside the app's own sandboxed container.</li>
   <li><strong>Your preferences.</strong> Text size, font choice (system or OpenDyslexic), light/dark/system appearance, region, and whether the app lock is enabled. Stored in standard iOS preferences (<code>UserDefaults</code>) inside the same sandbox.</li>
   <li><strong>Onboarding state.</strong> Whether you have dismissed the first-launch disclaimer and whether you have completed the setup wizard. Same sandbox.</li>
 </ul>
 
-<p>None of this is transmitted. None of it is backed up to a Tideline server, because there is no Tideline server. If iCloud Backup is enabled on your device, iOS may include this data in your device's encrypted iCloud Backup — that is Apple's mechanism, not ours, and is covered by Apple's privacy policy.</p>
+<p>None of this is transmitted. None of it is backed up to a Tideline server, because there is no Tideline server. If iCloud Backup is enabled on your device, iOS may include this data in your device's encrypted iCloud Backup. That is Apple's mechanism, not ours, and is covered by Apple's privacy policy.</p>
 
 <p>When you delete the app, iOS removes the app's sandbox and everything in it.</p>
 
@@ -159,19 +159,19 @@
 
 <p>If you enable the optional app lock, Tideline asks iOS to confirm it's you using Face ID, Touch ID, or your device passcode before showing your diary.</p>
 
-<p>That check happens through Apple's <code>LocalAuthentication</code> framework. Your face data, fingerprint data, and passcode are processed on Apple's Secure Enclave on your device. Tideline never sees your biometric data — the framework only tells the app "yes" or "no". Nothing about the biometric check leaves your device.</p>
+<p>That check happens through Apple's <code>LocalAuthentication</code> framework. Your face data, fingerprint data, and passcode are processed on Apple's Secure Enclave on your device. Tideline never sees your biometric data; the framework only tells the app "yes" or "no". Nothing about the biometric check leaves your device.</p>
 
-<p>If you disable your device passcode entirely, the lock can't run. Tideline shows a one-time banner explaining why and lets you back into your data — you are never permanently locked out of your own diary.</p>
+<p>If you disable your device passcode entirely, the lock can't run. Tideline shows a one-time banner explaining why and lets you back into your data. You are never permanently locked out of your own diary.</p>
 
 <h2>6. Exports and sharing</h2>
 
-<p>You can export your diary as a PDF, a CSV file, or a JSON file, for a date range you choose. The app generates that file locally and hands it to the standard iOS share sheet. You then pick where it goes — AirDrop, Mail, Messages, Files, a third-party app, or anywhere else iOS offers.</p>
+<p>You can export your diary as a PDF, a CSV file, or a JSON file, for a date range you choose. The app generates that file locally and hands it to the standard iOS share sheet. You then pick where it goes: AirDrop, Mail, Messages, Files, a third-party app, or anywhere else iOS offers.</p>
 
 <p>Tideline itself does not transmit, upload, or send the file to anything or anyone. The destination is entirely your choice and is handled by iOS and by whatever app you pick. Once the file leaves the share sheet, Tideline has no further involvement and no copy on any server.</p>
 
 <h2>7. Phone numbers, links, and the Support tab</h2>
 
-<p>The Support tab shows a curated list of epilepsy charities, helplines, and peer communities for your region. The list is bundled inside the app — there is no network fetch to display it.</p>
+<p>The Support tab shows a curated list of epilepsy charities, helplines, and peer communities for your region. The list is bundled inside the app. There is no network fetch to display it.</p>
 
 <p>If you tap a phone number or a website, iOS opens it in its standard handler (your dialler, Mail, or Safari). Tideline does not place the call, send the email, or load the page. The app does not request access to your contacts, your call history, or your messages.</p>
 
@@ -187,7 +187,7 @@
 
 <h2>9. Children</h2>
 
-<p>Tideline is suitable for any age but is not directed specifically at children under 13. Because the app collects no data at all, there is no special data-handling regime for under-13 users — there is nothing to handle.</p>
+<p>Tideline is suitable for any age but is not directed specifically at children under 13. Because the app collects no data at all, there is no special data-handling regime for under-13 users; there is nothing to handle.</p>
 
 <h2>10. Your rights</h2>
 
@@ -197,7 +197,7 @@
 
 <h2>11. Changes to this policy</h2>
 
-<p>This policy may be updated. If a future version of the app introduces any change that affects what data is handled — even something minor — we will note it in the release notes for that version on the App Store, and update this page. There is no automatic mechanism to notify you; the release notes are the place to check.</p>
+<p>This policy may be updated. If a future version of the app introduces any change that affects what data is handled, even something minor, we will note it in the release notes for that version on the App Store, and update this page. There is no automatic mechanism to notify you; the release notes are where you can check.</p>
 
 <h2>12. Contact</h2>
 
